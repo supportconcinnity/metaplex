@@ -110,7 +110,7 @@ export const MetaplexMenu = () => {
 export const LogoLink = () => {
   return (
     <Link to={`/`}>
-      <img src={'/metaplex-logo.svg'} />
+      <img className="nav-logo" src={'/app-logo.png'} />
     </Link>
   );
 };
