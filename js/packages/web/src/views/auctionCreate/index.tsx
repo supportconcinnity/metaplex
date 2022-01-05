@@ -718,83 +718,82 @@ const CategoryStep = (props: {
       <Row className="call-to-action">
         <h2>List an item</h2>
         <p>
-          First time listing on Metaplex? <a>Read our sellers' guide.</a>
+          First time listing on Run The Chain? {/*<a>Read our sellers' guide.</a>*/}
         </p>
       </Row>
-      <Row justify={width < 768 ? 'center' : 'start'}>
-        <Col>
-          <Row>
-            <Button
-              className="type-btn"
-              size="large"
-              onClick={() => props.confirm(AuctionCategory.InstantSale)}
-            >
-              <div>
-                <div>Instant Sale</div>
-                <div className="type-btn-description">
-                  At a fixed price, sell a single Master NFT or copies of it
-                </div>
+      {/*<Row justify={width < 768 ? 'center' : 'start'}>*/}
+      <Row gutter={40}>
+        <Col className="gutter-row" span={6}>
+          <Button
+            className="type-btn"
+            size="large"
+            onClick={() => props.confirm(AuctionCategory.InstantSale)}
+          >
+            <div>
+              <div>Instant Sale</div>
+              <div className="type-btn-description">
+                At a fixed price, sell a single Master NFT or copies of it
               </div>
-            </Button>
-          </Row>
-          <Row>
-            <Button
-              className="type-btn"
-              size="large"
-              onClick={() => props.confirm(AuctionCategory.Limited)}
-            >
-              <div>
-                <div>Limited Edition</div>
-                <div className="type-btn-description">
-                  Sell a limited copy or copies of a single Master NFT
-                </div>
+            </div>
+          </Button>
+        </Col>
+        <Col className="gutter-row" span={6}>
+          <Button
+            className="type-btn"
+            size="large"
+            onClick={() => props.confirm(AuctionCategory.Limited)}
+          >
+            <div>
+              <div>Limited Edition</div>
+              <div className="type-btn-description">
+                Sell a limited copy or copies of a single Master NFT
               </div>
-            </Button>
-          </Row>
-          <Row>
-            <Button
-              className="type-btn"
-              size="large"
-              onClick={() => props.confirm(AuctionCategory.Open)}
-            >
-              <div>
-                <div>Open Edition</div>
-                <div className="type-btn-description">
-                  Sell unlimited copies of a single Master NFT
-                </div>
+            </div>
+          </Button>
+        </Col>
+        <Col className="gutter-row" span={6}>
+          <Button
+            className="type-btn"
+            size="large"
+            onClick={() => props.confirm(AuctionCategory.Open)}
+          >
+            <div>
+              <div>Open Edition</div>
+              <div className="type-btn-description">
+                Sell unlimited copies of a single Master NFT
               </div>
-            </Button>
-          </Row>
-          <Row>
-            <Button
-              className="type-btn"
-              size="large"
-              onClick={() => props.confirm(AuctionCategory.Tiered)}
-            >
-              <div>
-                <div>Tiered Auction</div>
-                <div className="type-btn-description">
-                  Participants get unique rewards based on their leaderboard
-                  rank
-                </div>
+            </div>
+          </Button>
+        </Col>
+        <Col className="gutter-row" span={6}>
+          <Button
+            className="type-btn"
+            size="large"
+            onClick={() => props.confirm(AuctionCategory.Tiered)}
+          >
+            <div>
+              <div>Tiered Auction</div>
+              <div className="type-btn-description">
+                Participants get unique rewards based on their leaderboard
+                rank
               </div>
-            </Button>
-          </Row>
-          <Row>
-            <Button
-              className="type-btn"
-              size="large"
-              onClick={() => props.confirm(AuctionCategory.Single)}
-            >
-              <div>
-                <div>Sell an Existing Item</div>
-                <div className="type-btn-description">
-                  Sell an existing item in your NFT collection, including Master
-                  NFTs
-                </div>
+            </div>
+          </Button>
+        </Col>
+        <Col className="gutter-row" span={6}>
+          <Button
+            className="type-btn"
+            size="large"
+            onClick={() => props.confirm(AuctionCategory.Single)}
+          >
+            <div>
+              <div>Sell an Existing Item</div>
+              <div className="type-btn-description">
+                Sell an existing item in your NFT collection, including Master
+                NFTs
               </div>
-            </Button>
-          </Row>
+            </div>
+          </Button>
         </Col>
       </Row>
     </>
